@@ -11,8 +11,8 @@ body {
     padding: 10px;
 
     display: grid;
-    grid-template-rows: 1fr 2fr 4fr 1fr;
-    grid-template-columns: repeat(3, 1fr) 17%;
+    grid-template-rows: [header-start] 1fr [header-end box-start] 2fr [box-end main-start] 4fr [main-end footer-start] 1fr [footer-end];
+    grid-template-columns: repeat(3, [col-start] 1fr [col-end]) [sidebar-start] 17% [sidebar-end];
     gap: 20px;
 
     & > * {
