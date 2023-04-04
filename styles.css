@@ -23,17 +23,21 @@ body {
 }
 
 .header {
-  padding: 20px;
+  grid-row: header-start/header-end;
+  grid-column: col-start 1/sidebar-end;
 }
 
 .sidebar {
-  grid-area: 2/4/4/-1;
+  grid-row: box-start/main-end;
+  grid-column: col-end 3/sidebar-end;
 }
 
 .main-content {
-  grid-area: 3/1/4/4;
+  grid-row: main-start/main-end;
+  grid-column: col-start 1/col-end 3;
 }
 
 .footer {
-  grid-area: 4/1/-1/-1;
+  grid-row: footer-start/footer-end;
+  grid-column: col-start 1/sidebar-end;
 }/*# sourceMappingURL=styles.css.map */
